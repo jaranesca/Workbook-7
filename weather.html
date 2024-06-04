@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Forecast</title>
+   <link rel="stylesheet" href="weather.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Freeman&family=Lilita+One&family=Pacifico&family=Seymour+One&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>Weather Forecast</h1>
+    <label for="city-dropdown">Select a city:</label>
+    <select id="city-dropdown">
+        <option value="">--Select a city--</option>
+    </select>
+    <div id="weather-container" class="weather-container"></div>
     <script src="weather.js"></script>
 </body>
 </html>

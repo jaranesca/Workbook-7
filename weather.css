@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #87CEEB, #1E90FF); 
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    font-size: 40px; 
+    margin-bottom: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+label {
+    font-size: 19.2px;
+    margin-bottom: 10px;
+    display: block;
+}
+#city-dropdown {
+    padding: 10px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-period {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+.weather-period h2 {
+    margin-top: 0;
+}
+.weather-period p {
+    margin: 5px 0;
+}
+.short-forecast {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+.weather-period .label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.period-name{
+    color: white;
+    margin-bottom: 15px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
