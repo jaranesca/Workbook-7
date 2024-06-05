@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const weatherUrl = data.properties.forecast;
                 getWeather(weatherUrl);
             } catch (error) {
-                console.error('Error fetching weather station data:', error);
+                console.error('Error:', error);
             }
         } else {
             locationInfo.innerHTML = '';
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const forecastArray = data.properties.periods;
             displayWeather(forecastArray);
         } catch (error) {
-            console.error('Error fetching weather forecast:', error);
+            console.error('Error:', error);
         }
     }
 

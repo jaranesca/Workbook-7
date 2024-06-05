@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind Grocery - Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Products</h1>
+        <div class="form-group">
+            <label for="search-type">Search by:</label>
+            <select id="search-type" class="form-control">
+                <option value="">Select one...</option>
+                <option value="all">View all</option>
+                <option value="category">Search by category</option>
+            </select>
+        </div>
+        <div class="form-group" id="category-select-container" style="display: none;">
+            <label for="categories">Category:</label>
+            <select id="categories" class="form-control"></select>
+        </div>
+        <div id="products-list" class="row"></div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
