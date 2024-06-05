@@ -1,3 +1,5 @@
+"use strict";
+
 const cities = [
     { name: "Benbrook, TX", latitude: 32.6732, longitude: -97.4606 },
     { name: "New York, NY", latitude: 40.7128, longitude: -74.0060 },
@@ -52,17 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayWeather(forecastArray) {
         weatherContainer.innerHTML = '';
-        forecastArray.forEach(period => {
+        forecastArray.forEach((forecast, i) => {
             const periodDiv = document.createElement('div');
             periodDiv.classList.add('weather-period');
             periodDiv.innerHTML = `
-                <h2 class="period-name">${period.name}</h2>
-                <p class="label">Temperature: ${period.temperature} ${period.temperatureUnit}</p>
-                <p class="label">Winds: ${period.windDirection} ${period.windSpeed}</p>
-                <p class="short-forecast">${period.shortForecast}</p>
+                <h2 class="period-name">${forecastArray[i].name}</h2>
+                <p class="label">Temperature: ${"Temperature " + forecastArray[i].temperature + " " + forecastArray[i].temperatureUnit}</p>
+                <p class="label">Winds: ${"Winds " + forecastArray[i].windDirection + " " + forecastArray[i].windSpeed}</p>
+                <p class="short-forecast">${forecastArray[i].shortForecast}</p>
             `;
             weatherContainer.appendChild(periodDiv);
         });
     }
 });
-
